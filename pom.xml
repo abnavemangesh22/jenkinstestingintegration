@@ -74,5 +74,14 @@
 		</plugins>
 
 	</build>
+	<profile>
+    <id>SUREFIRE-1588</id>
+    <activation>
+        <activeByDefault>true</activeByDefault>
+    </activation>
+    <properties>
+        <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+    </properties>
+</profile>
 
 </project>
